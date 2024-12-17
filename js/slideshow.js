@@ -2,11 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Slideshow configuration
     const slideshowConfig = {
         images: [
+            // './img/hp-main-visual/mainV34 (compressed).jpg',
             './img/hp-main-visual/mv1.jpg',
             './img/hp-main-visual/mv2.jpg',
             './img/hp-main-visual/mv3.jpg',
             './img/hp-main-visual/mv4.jpg',
-            // '/img/hp-main-visual/',
+            './img/hp-main-visual/mv5.jpg',
         ],
         autoplayDuration: 5000,
         isPlaying: true
