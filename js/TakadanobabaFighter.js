@@ -379,9 +379,15 @@ const textures = {
 // Background
 
 // utilize the whole background image instead of just a small portion as originally intended
-const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
-background.position.set(0, 0);
-app.stage.addChild(background);
+function renderBackground() {
+    const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
+    background.position.set(0, 0);
+    app.stage.addChild(background);
+    placeGameObjects(background);
+}
+// const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
+// background.position.set(0, 0);
+// app.stage.addChild(background);
 
 // document.querySelector('canvas').style.zIndex = '1';
 // app.stage.sortableChildren = true;
@@ -1251,11 +1257,11 @@ let enemySpawnTimer = setInterval(spawnEnemy, enemySpawnInterval);
 window.addEventListener('DOMContentLoaded', () => {
     const gameView = document.getElementById('game-view');
     if (gameView) {
+        renderBackground();
         console.log("Appending app.view to #game-view...");
         gameView.appendChild(app.view);
         app.renderer.resize(gameView.offsetWidth, gameView.offsetHeight);
         console.log("App view appended and resized successfully.");
-        placeGameObjects(background);
     } else {
         console.error("Error: #game-view element not found in the DOM.");
     }
