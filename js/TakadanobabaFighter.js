@@ -382,6 +382,7 @@ const textures = {
 const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
 background.position.set(0, 0);
 app.stage.addChild(background);
+
 // document.querySelector('canvas').style.zIndex = '1';
 // app.stage.sortableChildren = true;
 
@@ -734,42 +735,45 @@ const gameObjects = [
 ];
 
 // place landmarks on the map
-gameObjects.forEach(obj => {
-    switch (obj.type) {
-        case 'landmark':
-            let landmark_texture = new PIXI.Sprite(obj.sprite);
-            landmark_texture.anchor.set(0.5);
-            landmark_texture.zIndex = 1;
-            landmark_texture.x = obj.x + background.width / 2;
-            landmark_texture.y = obj.y + background.height / 2;
-            // landmark_texture.width = 128;
-            // landmark_texture.height = 128;
-            obj.sprite = landmark_texture;
-            app.stage.addChild(landmark_texture);
-            break;
-        case 'vendingmachine':
-            let vendingmachine_texture = new PIXI.Sprite(textures.vendingmachine);
-            vendingmachine_texture.anchor.set(0.5);
-            vendingmachine_texture.zIndex = 2;
-            vendingmachine_texture.x = obj.x + background.width / 2;
-            vendingmachine_texture.y = obj.y + background.height / 2;
-            // vendingmachine_texture.width = 64;
-            // vendingmachine_texture.height = 64;
-            vendingmachine_texture.scale.set(1.5);
-            obj.sprite = vendingmachine_texture;
-            app.stage.addChild(vendingmachine_texture);
-            break;
-        case 'scenery':
-            let scenery_texture = new PIXI.Sprite(obj.sprite);
-            scenery_texture.anchor.set(0.5);
-            scenery_texture.zIndex = 4;
-            scenery_texture.x = obj.x + background.width / 2;
-            scenery_texture.y = obj.y + background.height / 2;
-            obj.sprite = scenery_texture;
-            app.stage.addChild(scenery_texture);
-            break;
-    }
-});
+
+function placeGameObjects(background) {
+    gameObjects.forEach(obj => {
+        switch (obj.type) {
+            case 'landmark':
+                let landmark_texture = new PIXI.Sprite(obj.sprite);
+                landmark_texture.anchor.set(0.5);
+                landmark_texture.zIndex = 1;
+                landmark_texture.x = obj.x + background.width / 2;
+                landmark_texture.y = obj.y + background.height / 2;
+                // landmark_texture.width = 128;
+                // landmark_texture.height = 128;
+                obj.sprite = landmark_texture;
+                app.stage.addChild(landmark_texture);
+                break;
+            case 'vendingmachine':
+                let vendingmachine_texture = new PIXI.Sprite(textures.vendingmachine);
+                vendingmachine_texture.anchor.set(0.5);
+                vendingmachine_texture.zIndex = 2;
+                vendingmachine_texture.x = obj.x + background.width / 2;
+                vendingmachine_texture.y = obj.y + background.height / 2;
+                // vendingmachine_texture.width = 64;
+                // vendingmachine_texture.height = 64;
+                vendingmachine_texture.scale.set(1.5);
+                obj.sprite = vendingmachine_texture;
+                app.stage.addChild(vendingmachine_texture);
+                break;
+            case 'scenery':
+                let scenery_texture = new PIXI.Sprite(obj.sprite);
+                scenery_texture.anchor.set(0.5);
+                scenery_texture.zIndex = 4;
+                scenery_texture.x = obj.x + background.width / 2;
+                scenery_texture.y = obj.y + background.height / 2;
+                obj.sprite = scenery_texture;
+                app.stage.addChild(scenery_texture);
+                break;
+        }
+    });
+}
 
 // enemies (spawned on map first maybe)
 const enemies = [];
@@ -1251,6 +1255,7 @@ window.addEventListener('DOMContentLoaded', () => {
         gameView.appendChild(app.view);
         app.renderer.resize(gameView.offsetWidth, gameView.offsetHeight);
         console.log("App view appended and resized successfully.");
+        placeGameObjects(background);
     } else {
         console.error("Error: #game-view element not found in the DOM.");
     }
