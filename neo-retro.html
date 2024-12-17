@@ -20,7 +20,7 @@
   <!-- Outer container with center alignment -->
   <div class="min-h-screen flex justify-center box-border relative overflow-x-hidden">
     <!-- Main container with fixed width -->
-    <div class="w-[1440px] relative bg-[url('/img/worn-dots.png')] bg-repeat bg-auto min-h-screen isolation">
+    <div class="w-[1440px] relative bg-[url('./img/worn-dots.png')] bg-repeat bg-auto min-h-screen isolation">
       <!-- Add this before the header -->
       <div id="headerTrigger" class="h-1"></div>
 
@@ -150,15 +150,15 @@
 
                 <!-- Right Side - adjusted width -->
                 <div
-                  class="flex-1 min-h-[calc(100vh-64px)] bg-white bg-[url('/img/worn-dots.png')] bg-repeat bg-auto relative">
+                  class="flex-1 min-h-[calc(100vh-64px)] bg-white bg-[url('./img/worn-dots.png')] bg-repeat bg-auto relative">
                   <!-- Background container -->
                   <div class="menu-bg-container">
                     <!-- Background images for each article -->
-                    <img src="/img/thumbNails/thumbnail_01.jpg" class="menu-bg-image" data-article="1" alt="" />
-                    <img src="/img/thumbNails/thumbnail_02.jpg" class="menu-bg-image" data-article="2" alt="" />
-                    <img src="/img/thumbNails/thumbnail_03.jpg" class="menu-bg-image" data-article="3" alt="" />
-                    <img src="/img/thumbNails/thumbnail_04.jpg" class="menu-bg-image" data-article="4" alt="" />
-                    <img src="/img/thumbNails/thumbnail_05.jpg" class="menu-bg-image" data-article="5" alt="" />
+                    <img src="./img/thumbNails/thumbnail_01.jpg" class="menu-bg-image" data-article="1" alt="" />
+                    <img src="./img/thumbNails/thumbnail_02.jpg" class="menu-bg-image" data-article="2" alt="" />
+                    <img src="./img/thumbNails/thumbnail_03.jpg" class="menu-bg-image" data-article="3" alt="" />
+                    <img src="./img/thumbNails/thumbnail_04.jpg" class="menu-bg-image" data-article="4" alt="" />
+                    <img src="./img/thumbNails/thumbnail_05.jpg" class="menu-bg-image" data-article="5" alt="" />
                   </div>
                   <div class="py-12 px-8 relative z-10">
                     <!-- This is the container that should be scrollable -->
@@ -244,7 +244,7 @@
       <!-- Hero Section -->
       <section class="w-[1440px] relative" aria-label="Hero Banner">
         <div class="relative w-full h-[664px]">
-          <img src="/img/article_01/article-01_main.jpg" alt="新宿の喫茶の様子" class="w-full h-full object-cover" />
+          <img src="./img/article_01/article-01_main.jpg" alt="新宿の喫茶の様子" class="w-full h-full object-cover" />
           <!-- Hero content overlay -->
           <div class="absolute inset-0 bg-black/50">
             <!-- Hero content will go here -->
@@ -349,21 +349,21 @@
               <div class="w-full h-full relative overflow-hidden">
                 <!-- Slide 1 -->
                 <div class="slide absolute inset-0 flex gap-[32px] transition-transform duration-500" data-slide="1">
-                  <img src="/img/article_01/ni-nana_01.jpg" alt="ニーナナ喫茶の赤い看板"
+                  <img src="./img/article_01/ni-nana_01.jpg" alt="ニーナナ喫茶の赤い看板"
                     class="w-[589px] h-[610px] object-cover" />
-                  <img src="/img/article_01/ni-nana_02.jpg" alt="デスコボールの店" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_02.jpg" alt="デスコボールの店" class="w-[589px] h-[610px] object-cover" />
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="slide absolute inset-0 flex gap-[32px] translate-x-full transition-transform duration-500"
                   data-slide="2">
-                  <img src="/img/article_01/ni-nana_03.jpg" alt="店内の様子1" class="w-[589px] h-[610px] object-cover" />
-                  <img src="/img/article_01/ni-nana_04.jpg" alt="店内の様子2" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_03.jpg" alt="店内の様子1" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_04.jpg" alt="店内の様子2" class="w-[589px] h-[610px] object-cover" />
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="slide absolute inset-0 translate-x-full transition-transform duration-500" data-slide="3">
-                  <img src="/img/article_01/ni-nana_05.jpg" alt="店内の全景" class="w-full h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_05.jpg" alt="店内の全景" class="w-full h-[610px] object-cover" />
                 </div>
               </div>
 
@@ -396,21 +396,21 @@
                 <!-- Navigation Dots -->
                 <div class="flex gap-4 justify-center w-[112px]">
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 1" data-slide-dot="1">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 hidden transition-opacity hover:opacity-100" />
                   </button>
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 2" data-slide-dot="2">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 hidden transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 transition-opacity hover:opacity-100" />
                   </button>
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 3" data-slide-dot="3">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 hidden transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 transition-opacity hover:opacity-100" />
                   </button>
                 </div>
@@ -427,7 +427,7 @@
             <div class="flex gap-[32px]">
               <!-- Left Side - Image -->
               <div class="w-[362px] h-[276px]">
-                <img src="/img/article_01/ni-nana_link.jpg" alt="ニーナナ喫茶の店内" class="w-full h-full object-cover" />
+                <img src="./img/article_01/ni-nana_link.jpg" alt="ニーナナ喫茶の店内" class="w-full h-full object-cover" />
               </div>
 
               <!-- Right Side - Info -->
@@ -509,21 +509,21 @@
               <div class="w-full h-full relative overflow-hidden">
                 <!-- Slide 1 -->
                 <div class="slide absolute inset-0 flex gap-[32px] transition-transform duration-500" data-slide="1">
-                  <img src="/img/article_01/ni-nana_01.jpg" alt="ニーナナ喫茶の赤い看板"
+                  <img src="./img/article_01/ni-nana_01.jpg" alt="ニーナナ喫茶の赤い看板"
                     class="w-[589px] h-[610px] object-cover" />
-                  <img src="/img/article_01/ni-nana_02.jpg" alt="デスコボールの店" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_02.jpg" alt="デスコボールの店" class="w-[589px] h-[610px] object-cover" />
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="slide absolute inset-0 flex gap-[32px] translate-x-full transition-transform duration-500"
                   data-slide="2">
-                  <img src="/img/article_01/ni-nana_03.jpg" alt="店内の様子1" class="w-[589px] h-[610px] object-cover" />
-                  <img src="/img/article_01/ni-nana_04.jpg" alt="店内の様子2" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_03.jpg" alt="店内の様子1" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_04.jpg" alt="店内の様子2" class="w-[589px] h-[610px] object-cover" />
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="slide absolute inset-0 translate-x-full transition-transform duration-500" data-slide="3">
-                  <img src="/img/article_01/ni-nana_05.jpg" alt="店内の全景" class="w-full h-[610px] object-cover" />
+                  <img src="./img/article_01/ni-nana_05.jpg" alt="店内の全景" class="w-full h-[610px] object-cover" />
                 </div>
               </div>
 
@@ -556,21 +556,21 @@
                 <!-- Navigation Dots -->
                 <div class="flex gap-4 justify-center w-[112px]">
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 1" data-slide-dot="1">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 hidden transition-opacity hover:opacity-100" />
                   </button>
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 2" data-slide-dot="2">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 hidden transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 transition-opacity hover:opacity-100" />
                   </button>
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 3" data-slide-dot="3">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 hidden transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 transition-opacity hover:opacity-100" />
                   </button>
                 </div>
@@ -587,7 +587,7 @@
             <div class="flex gap-[32px]">
               <!-- Left Side - Image -->
               <div class="w-[362px] h-[276px]">
-                <img src="/img/article_01/ni-nana_link.jpg" alt="ニーナナ喫茶の店内" class="w-full h-full object-cover" />
+                <img src="./img/article_01/ni-nana_link.jpg" alt="ニーナナ喫茶の店内" class="w-full h-full object-cover" />
               </div>
 
               <!-- Right Side - Info -->
@@ -671,19 +671,19 @@
               <div class="w-full h-full relative overflow-hidden">
                 <!-- Slide 1 - Full Width -->
                 <div class="slide absolute inset-0 transition-transform duration-500" data-slide="1">
-                  <img src="/img/article_01/seibu_01.jpg" alt="珈琲西武の外観" class="w-full h-[610px] object-cover" />
+                  <img src="./img/article_01/seibu_01.jpg" alt="珈琲西武の外観" class="w-full h-[610px] object-cover" />
                 </div>
 
                 <!-- Slide 2 - Full Width -->
                 <div class="slide absolute inset-0 translate-x-full transition-transform duration-500" data-slide="2">
-                  <img src="/img/article_01/seibu_02.jpg" alt="珈琲西武のネオンライン" class="w-full h-[610px] object-cover" />
+                  <img src="./img/article_01/seibu_02.jpg" alt="珈琲西武のネオンライン" class="w-full h-[610px] object-cover" />
                 </div>
 
                 <!-- Slide 3 - Two Images -->
                 <div class="slide absolute inset-0 flex gap-[32px] translate-x-full transition-transform duration-500"
                   data-slide="3">
-                  <img src="/img/article_01/seibu_03.jpg" alt="店内の様子" class="w-[589px] h-[610px] object-cover" />
-                  <img src="/img/article_01/seibu_04.jpg" alt="メニューの様子" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/seibu_03.jpg" alt="店内の様子" class="w-[589px] h-[610px] object-cover" />
+                  <img src="./img/article_01/seibu_04.jpg" alt="メニューの様子" class="w-[589px] h-[610px] object-cover" />
                 </div>
               </div>
 
@@ -716,21 +716,21 @@
                 <!-- Navigation Dots -->
                 <div class="flex gap-4 justify-center w-[112px]">
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 1" data-slide-dot="1">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 hidden transition-opacity hover:opacity-100" />
                   </button>
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 2" data-slide-dot="2">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 hidden transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 transition-opacity hover:opacity-100" />
                   </button>
                   <button class="w-[14px] h-[14px] transition-opacity" aria-label="Go to slide 3" data-slide-dot="3">
-                    <img src="/img/illusts/functional/status-visible.svg" alt=""
+                    <img src="./img/illusts/functional/status-visible.svg" alt=""
                       class="w-full h-full opacity-100 hidden transition-opacity" />
-                    <img src="/img/illusts/functional/status-hidden.svg" alt=""
+                    <img src="./img/illusts/functional/status-hidden.svg" alt=""
                       class="w-full h-full opacity-50 transition-opacity hover:opacity-100" />
                   </button>
                 </div>
@@ -747,7 +747,7 @@
             <div class="flex gap-[32px]">
               <!-- Left Side - Image -->
               <div class="w-[362px] h-[276px]">
-                <img src="/img/article_01/seibu_link.jpg" alt="珈琲西武の店内" class="w-full h-full object-cover" />
+                <img src="./img/article_01/seibu_link.jpg" alt="珈琲西武の店内" class="w-full h-full object-cover" />
               </div>
 
               <!-- Right Side - Info -->
@@ -798,13 +798,13 @@
           <div id="footer-left" class="w-[400px]">
             <div id="footer-left-socials" class="flex flex-row gap-[16px] pb-[16px]">
               <a href="#" class="hover:opacity-80">
-                <img src="/img/illusts/sns/instagram-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="Instagram" />
+                <img src="./img/illusts/sns/instagram-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="Instagram" />
               </a>
               <a href="#" class="hover:opacity-80">
-                <img src="/img/illusts/sns/x-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="X (Twitter)" />
+                <img src="./img/illusts/sns/x-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="X (Twitter)" />
               </a>
               <a href="#" class="hover:opacity-80">
-                <img src="/img/illusts/sns/line-logo.svg" class="h-[48px] w-[48px]" alt="LINE" />
+                <img src="./img/illusts/sns/line-logo.svg" class="h-[48px] w-[48px]" alt="LINE" />
               </a>
             </div>
             <hr class="py-[8px]" />

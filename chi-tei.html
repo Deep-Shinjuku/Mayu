@@ -21,7 +21,7 @@
   <!-- Outer container with center alignment -->
   <div class="min-h-screen flex justify-center box-border relative overflow-x-hidden">
     <!-- Main container with fixed width -->
-    <div class="w-[1440px] relative bg-[url('/img/worn-dots.png')] bg-repeat bg-auto isolation">
+    <div class="w-[1440px] relative bg-[url('./img/worn-dots.png')] bg-repeat bg-auto isolation">
       <!-- Add this before the header -->
       <div id="headerTrigger" class="h-1"></div>
 
@@ -153,15 +153,15 @@
 
                 <!-- Right Side - adjusted width -->
                 <div
-                  class="flex-1 min-h-[calc(100vh-64px)] bg-white bg-[url('/img/worn-dots.png')] bg-repeat bg-auto relative">
+                  class="flex-1 min-h-[calc(100vh-64px)] bg-white bg-[url('./img/worn-dots.png')] bg-repeat bg-auto relative">
                   <!-- Background container -->
                   <div class="menu-bg-container">
                     <!-- Background images for each article -->
-                    <img src="/img/thumbNails/thumbnail_01.jpg" class="menu-bg-image" data-article="1" alt="" />
-                    <img src="/img/thumbNails/thumbnail_02.jpg" class="menu-bg-image" data-article="2" alt="" />
-                    <img src="/img/thumbNails/thumbnail_03.jpg" class="menu-bg-image" data-article="3" alt="" />
-                    <img src="/img/thumbNails/thumbnail_04.jpg" class="menu-bg-image" data-article="4" alt="" />
-                    <img src="/img/thumbNails/thumbnail_05.jpg" class="menu-bg-image" data-article="5" alt="" />
+                    <img src="./img/thumbNails/thumbnail_01.jpg" class="menu-bg-image" data-article="1" alt="" />
+                    <img src="./img/thumbNails/thumbnail_02.jpg" class="menu-bg-image" data-article="2" alt="" />
+                    <img src="./img/thumbNails/thumbnail_03.jpg" class="menu-bg-image" data-article="3" alt="" />
+                    <img src="./img/thumbNails/thumbnail_04.jpg" class="menu-bg-image" data-article="4" alt="" />
+                    <img src="./img/thumbNails/thumbnail_05.jpg" class="menu-bg-image" data-article="5" alt="" />
                   </div>
                   <div class="py-12 px-8 relative z-10">
                     <!-- This is the container that should be scrollable -->
@@ -247,7 +247,7 @@
       <!-- Hero Section -->
       <section class="w-[1440px] relative" aria-label="Hero Banner">
         <div class="relative w-full h-[664px]">
-          <img src="/img/article_03/underground_main.jpg" alt="新宿駅地下の様子" class="w-full h-full object-cover" />
+          <img src="./img/article_03/underground_main.jpg" alt="新宿駅地下の様子" class="w-full h-full object-cover" />
         </div>
       </section>
 
@@ -323,7 +323,7 @@
         <section class="w-full mt-[64px] mb-[64px]">
           <!-- Image Container -->
           <div class="relative w-full">
-            <img src="/img/article_03/underground_01.jpg" alt="2024年秋の新宿駅西口" class="w-full h-[610px] object-cover"
+            <img src="./img/article_03/underground_01.jpg" alt="2024年秋の新宿駅西口" class="w-full h-[610px] object-cover"
               loading="lazy" style="
                   image-rendering: -webkit-optimize-contrast;
                   image-rendering: crisp-edges;
@@ -381,7 +381,7 @@
         <section class="w-full">
           <!-- Image Container with Center Alignment -->
           <div class="flex justify-center">
-            <img src="/img/article_03/地底人-表 1.png" alt="ヒッピー族とフーテン族の比較表"
+            <img src="./img/article_03/地底人-表 1.png" alt="ヒッピー族とフーテン族の比較表"
               class="w-[554px] h-[567.018px] object-contain" loading="lazy" style="
                   image-rendering: -webkit-optimize-contrast;
                   image-rendering: crisp-edges;
@@ -690,7 +690,7 @@
           <div class="w-full mx-auto">
             <!-- Full Width Image -->
             <div class="w-full">
-              <img src="/img/article_03/underground_gallery_first_big.jpg" alt="東口で撮影された地底人たち"
+              <img src="./img/article_03/underground_gallery_first_big.jpg" alt="東口で撮影された地底人たち"
                 class="w-full h-[600px] object-cover cursor-pointer" loading="lazy"
                 style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                 onclick="openImagePopup(this.src, this.alt)" />
@@ -699,7 +699,7 @@
             <div id="imagePopupContainer"
               class="fixed inset-0 z-50 hidden items-center justify-center overflow-x-hidden overflow-y-hidden">
               <div class="relative w-[1440px] h-[800px] my-[64px] flex items-center justify-center"
-                style="background-color: #363636; background-image: url('/img/worn-dots.png');">
+                style="background-color: #363636; background-image: url('./img/worn-dots.png');">
                 <!-- Image Container with Header -->
                 <div class="w-[796px]">
                   <!-- Header row -->
@@ -744,84 +744,84 @@
             <div class="grid grid-cols-4 gap-2 mt-2">
               <!-- Image 1 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_01.jpg" alt="丸ノ内線新宿駅とメトロプロムナード"
+                <img src="./img/article_03/underground_gallery_first_01.jpg" alt="丸ノ内線新宿駅とメトロプロムナード"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 2 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_02.jpg" alt="丸ノ内線新宿駅とメトロプロムナード"
+                <img src="./img/article_03/underground_gallery_first_02.jpg" alt="丸ノ内線新宿駅とメトロプロムナード"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 3 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_03.jpg" alt="地下鉄丸ノ内線　地下街"
+                <img src="./img/article_03/underground_gallery_first_03.jpg" alt="地下鉄丸ノ内線　地下街"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 4 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_04.jpg" alt="西口地下広場"
+                <img src="./img/article_03/underground_gallery_first_04.jpg" alt="西口地下広場"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 5 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_05.jpg" alt="新宿西口反戦フォーク集会"
+                <img src="./img/article_03/underground_gallery_first_05.jpg" alt="新宿西口反戦フォーク集会"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 6 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_06.jpg" alt="駅ビル地下の若者たち"
+                <img src="./img/article_03/underground_gallery_first_06.jpg" alt="駅ビル地下の若者たち"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 7 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_07.jpg" alt="新宿駅東口 グリーンハウスと呼ばれるフーテン族の聖地"
+                <img src="./img/article_03/underground_gallery_first_07.jpg" alt="新宿駅東口 グリーンハウスと呼ばれるフーテン族の聖地"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 8 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_08.jpg" alt="駅東口広場でのフーテン対策"
+                <img src="./img/article_03/underground_gallery_first_08.jpg" alt="駅東口広場でのフーテン対策"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 9 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_09.jpg" alt="深夜喫茶の若者たち"
+                <img src="./img/article_03/underground_gallery_first_09.jpg" alt="深夜喫茶の若者たち"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 10 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_10.jpg" alt="地下広場に残された落書き"
+                <img src="./img/article_03/underground_gallery_first_10.jpg" alt="地下広場に残された落書き"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 11 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_11.jpg" alt="80's「新宿を明るくきれいにする運動」の様子"
+                <img src="./img/article_03/underground_gallery_first_11.jpg" alt="80's「新宿を明るくきれいにする運動」の様子"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- image 12 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_first_12.jpg" alt="80's「新宿を明るくきれいにする運動」オープニングパレード"
+                <img src="./img/article_03/underground_gallery_first_12.jpg" alt="80's「新宿を明るくきれいにする運動」オープニングパレード"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
@@ -854,56 +854,56 @@
             <div class="grid grid-cols-4 gap-2">
               <!-- Image 1 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_01.jpg" alt="西口の螺旋車道の裏側"
+                <img src="./img/article_03/underground_gallery_second_01.jpg" alt="西口の螺旋車道の裏側"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 2 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_02.jpg" alt="西口地下の連絡通路の出口"
+                <img src="./img/article_03/underground_gallery_second_02.jpg" alt="西口地下の連絡通路の出口"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 3 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_03.jpg" alt="西口地下の連絡通路"
+                <img src="./img/article_03/underground_gallery_second_03.jpg" alt="西口地下の連絡通路"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 4 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_04.jpg" alt="駅東口広場でのフーテン対策"
+                <img src="./img/article_03/underground_gallery_second_04.jpg" alt="駅東口広場でのフーテン対策"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 5 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_05.jpg" alt="東口広場に出る階段"
+                <img src="./img/article_03/underground_gallery_second_05.jpg" alt="東口広場に出る階段"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 6 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_06.jpg" alt="東口広場からルミネへ"
+                <img src="./img/article_03/underground_gallery_second_06.jpg" alt="東口広場からルミネへ"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 7 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_07.jpg" alt="フーテン族の聖地「グリーンハウス」跡"
+                <img src="./img/article_03/underground_gallery_second_07.jpg" alt="フーテン族の聖地「グリーンハウス」跡"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
               </div>
               <!-- Image 8 -->
               <div class="w-full h-[260px]">
-                <img src="/img/article_03/underground_gallery_second_08.jpg" alt="新しくなった旧「グリーンハウス」"
+                <img src="./img/article_03/underground_gallery_second_08.jpg" alt="新しくなった旧「グリーンハウス」"
                   class="w-full h-full object-cover cursor-pointer" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                   onclick="openImagePopup(this.src, this.alt)" />
@@ -912,7 +912,7 @@
 
             <!-- Full Width Image -->
             <div class="w-full mt-2">
-              <img src="/img/article_03/underground_gallery_first_big_02.JPG" alt="2024新宿駅西口の大工事"
+              <img src="./img/article_03/underground_gallery_first_big_02.JPG" alt="2024新宿駅西口の大工事"
                 class="w-full h-[610px] object-cover cursor-pointer" loading="lazy"
                 style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                 onclick="openImagePopup(this.src, this.alt)" />
@@ -937,7 +937,7 @@
             <div class="flex gap-[32px]">
               <!-- Left Side - Image -->
               <div class="w-[352px] h-[276px] flex items-center justify-center">
-                <img src="/img/article_03/underground_link_01.jpg" alt="フーテン（漫画）の表紙"
+                <img src="./img/article_03/underground_link_01.jpg" alt="フーテン（漫画）の表紙"
                   class="h-full w-auto object-contain" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
               </div>
@@ -983,7 +983,7 @@
             <div class="flex gap-[32px]">
               <!-- Left Side - Image -->
               <div class="w-[352px] h-[276px] flex items-center justify-center">
-                <img src="/img/article_03/underground_link_02.jpg" alt="AMETORA 日本がアメリカンスタイルを救った話"
+                <img src="./img/article_03/underground_link_02.jpg" alt="AMETORA 日本がアメリカンスタイルを救った話"
                   class="h-full w-auto object-contain" loading="lazy"
                   style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
               </div>
@@ -1032,7 +1032,7 @@
             <div class="flex gap-[32px]">
               <!-- Left Side - Image -->
               <div class="w-[352px] h-[276px]">
-                <img src="/img/article_03/underground_link_03.jpg" alt="新宿歴史博物館の外観" class="w-full h-full object-cover"
+                <img src="./img/article_03/underground_link_03.jpg" alt="新宿歴史博物館の外観" class="w-full h-full object-cover"
                   loading="lazy" style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;" />
               </div>
 
@@ -1084,13 +1084,13 @@
           <div id="footer-left" class="w-[400px]">
             <div id="footer-left-socials" class="flex flex-row gap-[16px] pb-[16px]">
               <a href="#" class="hover:opacity-80">
-                <img src="/img/illusts/sns/instagram-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="Instagram" />
+                <img src="./img/illusts/sns/instagram-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="Instagram" />
               </a>
               <a href="#" class="hover:opacity-80">
-                <img src="/img/illusts/sns/x-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="X (Twitter)" />
+                <img src="./img/illusts/sns/x-logo.svg" class="h-[48px] w-[48px] mr-[16px]" alt="X (Twitter)" />
               </a>
               <a href="#" class="hover:opacity-80">
-                <img src="/img/illusts/sns/line-logo.svg" class="h-[48px] w-[48px]" alt="LINE" />
+                <img src="./img/illusts/sns/line-logo.svg" class="h-[48px] w-[48px]" alt="LINE" />
               </a>
             </div>
             <hr class="py-[8px]" />
