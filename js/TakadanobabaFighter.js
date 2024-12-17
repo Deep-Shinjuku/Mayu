@@ -376,22 +376,6 @@ const textures = {
     // enemy_drunk: PIXI.Texture.from("img/sprites/enemy_drunk/enemy_drunk.gif"),
 };
 
-// Background
-
-// utilize the whole background image instead of just a small portion as originally intended
-function renderBackground() {
-    const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
-    background.position.set(0, 0);
-    app.stage.addChild(background);
-    placeGameObjects(background);
-}
-// const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
-// background.position.set(0, 0);
-// app.stage.addChild(background);
-
-// document.querySelector('canvas').style.zIndex = '1';
-// app.stage.sortableChildren = true;
-
 // load player sprite and add to stage
 function spawnPlayer() {
     // if (!is_ticker_added) {
@@ -749,8 +733,8 @@ function placeGameObjects(background) {
                 let landmark_texture = new PIXI.Sprite(obj.sprite);
                 landmark_texture.anchor.set(0.5);
                 landmark_texture.zIndex = 1;
-                landmark_texture.x = obj.x + background.width / 2;
-                landmark_texture.y = obj.y + background.height / 2;
+                landmark_texture.x = obj.x
+                landmark_texture.y = obj.y
                 // landmark_texture.width = 128;
                 // landmark_texture.height = 128;
                 obj.sprite = landmark_texture;
@@ -760,8 +744,8 @@ function placeGameObjects(background) {
                 let vendingmachine_texture = new PIXI.Sprite(textures.vendingmachine);
                 vendingmachine_texture.anchor.set(0.5);
                 vendingmachine_texture.zIndex = 2;
-                vendingmachine_texture.x = obj.x + background.width / 2;
-                vendingmachine_texture.y = obj.y + background.height / 2;
+                vendingmachine_texture.x = obj.x
+                vendingmachine_texture.y = obj.y
                 // vendingmachine_texture.width = 64;
                 // vendingmachine_texture.height = 64;
                 vendingmachine_texture.scale.set(1.5);
@@ -772,8 +756,8 @@ function placeGameObjects(background) {
                 let scenery_texture = new PIXI.Sprite(obj.sprite);
                 scenery_texture.anchor.set(0.5);
                 scenery_texture.zIndex = 4;
-                scenery_texture.x = obj.x + background.width / 2;
-                scenery_texture.y = obj.y + background.height / 2;
+                scenery_texture.x = obj.x
+                scenery_texture.y = obj.y
                 obj.sprite = scenery_texture;
                 app.stage.addChild(scenery_texture);
                 break;
@@ -1239,6 +1223,21 @@ function toggleSurvivalMode() {
     }
 }
 
+// Background
+
+// utilize the whole background image instead of just a small portion as originally intended
+const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
+background.position.set(0, 0);
+app.stage.addChild(background);
+placeGameObjects(background);
+
+// const background = new PIXI.Sprite(textures.background, window.innerWidth, window.innerHeight);
+// background.position.set(0, 0);
+// app.stage.addChild(background);
+
+// document.querySelector('canvas').style.zIndex = '1';
+// app.stage.sortableChildren = true;
+
 // Event listeners
 window.addEventListener('keydown', e => {
     keys[e.code] = true;
@@ -1257,7 +1256,7 @@ let enemySpawnTimer = setInterval(spawnEnemy, enemySpawnInterval);
 window.addEventListener('DOMContentLoaded', () => {
     const gameView = document.getElementById('game-view');
     if (gameView) {
-        renderBackground();
+        // renderBackground();
         console.log("Appending app.view to #game-view...");
         gameView.appendChild(app.view);
         app.renderer.resize(gameView.offsetWidth, gameView.offsetHeight);
