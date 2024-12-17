@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Slideshow configuration
     const slideshowConfig = {
         images: [
-            '/image/hp-main-visual/mainV34 (compressed).jpg',
-            '/image/hp-main-visual/DSC03428.JPG',
-            '/image/hp-main-visual/100_0352.JPG',
-            '/image/hp-main-visual/DSC03440.JPG',
-            '/image/hp-main-visual/pop-067.JPG',
+            '/img/hp-main-visual/mv1.jpg',
+            '/img/hp-main-visual/mv2.jpg',
+            '/img/hp-main-visual/mv3.jpg',
+            '/img/hp-main-visual/mv4.jpg',
+            // '/img/hp-main-visual/',
         ],
         autoplayDuration: 5000,
         isPlaying: true
