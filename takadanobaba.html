@@ -356,14 +356,14 @@
             <!-- Infobox -->
             <div id="infobox-modal" class="modal absolute inset-0 bg-black bg-opacity-50 hidden items-start justify-center z-50 pt-30 overflow-y-auto h-full" id="landmark-modal">
                 <div id="infobox-content" class="modal-content bg-gray-100 pb-6 shadow-lg w-4/5 max-w-4xl relative m-30">
-                    <div id="infobox-header" class="modal-header flex bg-[#003BFF] text-[#E5FF00] text-4xl font-bold items-center justify-between h-16">
+                    <div id="infobox-header" class="modal-header flex bg-[#3b0c79] text-[#00FF95] text-4xl font-bold items-center justify-between h-16">
                         <!-- Title -->
                         <div class="flex-1 flex items-center">
                             <h1 id="infobox-title" class="p-2"></h1>
                         </div>
                         <!-- Close Button -->
-                        <div id="infobox-actions" class="aspect-square h-full bg-[#E5FF00] flex items-center justify-center cursor-pointer">
-                            <button id="infobox-close" class="text-[#003BFF] text-5xl font-bold">&times;</button>
+                        <div id="infobox-actions" class="aspect-square h-full bg-[#00FF95] flex items-center justify-center cursor-pointer">
+                            <button id="infobox-close" class="text-[#a400fc] text-5xl font-bold">&times;</button>
                         </div>
                     </div>
                     <!-- Content -->
@@ -379,7 +379,7 @@
             <!-- Introduction Modal -->
             <div id="intro-modal" class="modal absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                 <div class="modal-content bg-gray-100 pb-6 shadow-lg w-4/5 max-w-4xl relative">
-                    <div class="modal-header flex bg-[#003BFF] text-[#E5FF00] text-4xl font-bold items-center justify-between h-16">
+                    <div class="modal-header flex bg-[#3b0c79] text-[#00FF95] text-4xl font-bold items-center justify-between h-16">
                         <!-- Title -->
                         <div class="flex-1 flex items-center">
                             <h1 class="p-2">高田馬場ファイターズ</h1>
@@ -388,15 +388,15 @@
                     <!-- Content -->
                     <div class="modal-body mt-4 px-4 flex flex-row">
                         <div class="flex-1">
-                            <h3 class="text-[20px] font-normal bg-[#003BFF] text-[#E5FF00] inline-block p-2">目的</h3>
-                            <p class="text-lg mb-4">高田馬場を探索し、さらに詳しく知る冒険に出かけましょう！</p>
-                            <h3 class="text-[20px] font-normal bg-[#003BFF] text-[#E5FF00] inline-block p-2">コントロール</h3>
-                            <ul class="mb-4">
+                            <h3 class="text-[20px] font-normal bg-[#a400fc] text-[#00FF95] inline-block p-2">目的</h3>
+                            <p class="text-lg mb-4 py-2">高田馬場を探索し、さらに詳しく知る冒険に出かけましょう！</p>
+                            <h3 class="text-[20px] font-normal bg-[#a400fc] text-[#00FF95] inline-block p-2">コントロール</h3>
+                            <ul class="mb-4 py-2">
                                 <li><span class="font-bold">[ WASD ]</span> 移動</li>
                                 <li><span class="font-bold">[ F ]</span> 相互作用・打つ</li>
                             </ul>
-                            <h3 class="text-[20px] font-normal bg-[#003BFF] text-[#E5FF00] inline-block p-2">サバイバルモード</h3>
-                            <p class=" text-lg mb-4">チャレンジしてみませんか？右下の「サバイバルモード」をONにして！</p>
+                            <h3 class="text-[20px] font-normal bg-[#a400fc] text-[#00FF95] inline-block p-2">サバイバルモード</h3>
+                            <p class="py-2 text-lg mb-4">チャレンジしてみませんか？右下の「サバイバルモード」をONにして！</p>
                         </div>
                         <div class="flex flex-1 text-center justify-center">
                             <button id="start-game-btn" class="bg-[#00FF95] self-center text-black text-4xl px-8 py-4 rounded-1/2 shadow-lg hover:bg-gray-100 focus:ring-2 focus:ring-blue-500" onclick="gameStart()">
@@ -481,7 +481,7 @@
         </div>
         <!-- Article -->
         <div id="articles max-h-full">
-            <div id="article-expander" class="flex h-1/8 bg-[#003BFF] p-[16px] align-center justify-center cursor-pointer text-white" onclick="toggleArticle()">
+            <div id="article-expander" class="flex h-1/8 bg-[#a400fc] p-[16px] align-center justify-center cursor-pointer text-white transition ease-in-out duration-300" onclick="toggleArticle()">
                 <h3 class="hover:animate-pulse"><span id="article-expander-rightarr">&rarr;</span> 代わりに全体の記事を表示されます <span id="article-expander-leftarr">&larr;</span></h3>
             </div>
             <!-- when article-expander is clicked, #article expands to reveal the text that is in the game, so people who dont want to play can read instead -->
@@ -690,8 +690,8 @@
 
         // Function: Toggle Dropdown Menu
         function toggleNavMenu() {
-        dropdownMenu.classList.toggle('active');
-        dropdownMenu.classList.toggle('hidden');
+            dropdownMenu.classList.toggle('active');
+            dropdownMenu.classList.toggle('hidden');
         }
 
         // Function: Update Article Positions
@@ -708,8 +708,8 @@
                     article.style.top = `${504}px`;
                     article.classList.remove('hidden');
                     requestAnimationFrame(() => {
-                    article.style.opacity = '1';
-                    article.style.pointerEvents = 'auto';
+                        article.style.opacity = '1';
+                        article.style.pointerEvents = 'auto';
                     });
                 } else {
                     const newPosition = (articleNumber - 2) * ARTICLE_SPACING;
@@ -781,15 +781,20 @@
 
         function toggleArticle() {
             var article = document.getElementById('article');
+            var article_expander = document.getElementById('article-expander');
             var article_expander_rarr = document.getElementById('article-expander-rightarr');
             var article_expander_larr = document.getElementById('article-expander-leftarr');
             if (article.classList.contains('hidden')) {
                 article_expander_rarr.classList.add('rotateRight');
                 article_expander_larr.classList.add('rotateLeft');
+                article_expander.classList.remove('bg-[#a400fc]');
+                article_expander.classList.add('bg-[#003BFF]');
                 article.classList.remove('hidden');
             } else {
                 article_expander_rarr.classList.remove('rotateRight');
                 article_expander_larr.classList.remove('rotateLeft');
+                article_expander.classList.remove('bg-[#003BFF]');
+                article_expander.classList.add('bg-[#a400fc]');
                 article.classList.add('hidden');
             }
         }
